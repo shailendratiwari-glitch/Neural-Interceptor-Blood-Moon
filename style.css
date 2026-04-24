@@ -18,12 +18,12 @@ body {
 #ui { 
     position: absolute; 
     top: 30px; 
-    left: 30px; 
+    right: 30px; 
     color: var(--neon-cyan); 
     background: var(--hud-bg);
     padding: 25px;
-    border-left: 5px solid var(--neon-cyan);
-    border-radius: 0 20px 20px 0;
+    border-right: 5px solid var(--neon-cyan);
+    border-radius: 20px 0 0 20px;
     backdrop-filter: blur(12px);
     z-index: 100;
 }
@@ -48,4 +48,9 @@ body {
     object-fit: cover;
     /* This filter makes the webcam look high-tech */
     filter: brightness(1.2) contrast(1.2) sepia(100%) hue-rotate(140deg);
-}
+}\n.hud-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 12px; color: #00ffcc; text-shadow: 0 0 12px #00ffcc; }\n.stat-row { display: flex; justify-content: space-between; margin: 4px 0; font-size: 0.9rem; }\n#score-container { font-size: 1.5rem; color: #96ff7e; margin: 0.8rem 0; text-shadow: 0 0 12px #96ff7e; }\n.hint { margin-top: 10px; font-size: 0.7rem; color: rgba(255,255,255,0.72); }\n#objective { margin: 8px 0; font-size: 0.75rem; color: #ffb64f; font-weight: 700; }\n#overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.70); display: grid; align-content: center; justify-content: center; z-index: 999; }\n#overlay.hidden { display: none; }\n#overlay-content { border: 2px solid #00ffcc; padding: 24px; border-radius: 14px; text-align: center; width: min(90vw, 440px); background: rgba(0,4,16,0.95); box-shadow: 0 0 25px rgba(0,255,204,0.35); }
+#overlay-content h1 { font-size: 2rem; margin: 0; color: #00ffcc; text-shadow: 0 0 15px #00ffcc; }
+#overlay-content p { margin: 12px 0 18px; color: #ffffff; font-size: 0.95rem; }
+#overlay-content button { background: linear-gradient(125deg,#00ffea,#006cff); border: 0; color:#fff; font-size: 1rem; padding: 10px 16px; border-radius: 10px; cursor: pointer; box-shadow: 0 0 18px rgba(0, 204, 255, .45); }
+#overlay-content button:hover { transform: translateY(-2px); }
+
